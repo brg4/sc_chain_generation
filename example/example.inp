@@ -1,0 +1,66 @@
+#####################
+# program execution #
+#####################
+# flag for serial vs. parallel execution
+run = 2
+# range of replicate systems to be generated
+min_rep = 1
+max_rep = 4
+# RNG seed
+seed = 20
+
+################################
+# Lengths (units of Angstroms) #
+################################
+# r, monomer radius
+r = 1.7E+1
+# r_sc, spherocylinder radius
+r_sc = 1.7E+1
+# R_o, obstacle radius
+R_o = 1.0E+2
+# R_b, boundary radius
+R_b = 9.0E+2
+# bending persistence length
+L_p = 4.5E+2
+
+###########################
+# flags for configuration #
+###########################
+# flag for cyclic shifts
+cyclic_shift = 0
+# flag to test for the introduction of knots
+knot_prevent = 0
+
+#####################
+# Monte Carlo steps #
+#####################
+# number of Monte Carlo steps to straighten configuration
+MC_steps = 10000
+# thermodynamic beta
+beta = 1.0
+
+
+########################
+# obstacle information #
+########################
+# N_o, number of spherical obstacles
+# -1 < will use obstacle_file
+# (any positive number) < will generate uniformly distributed obstacles
+N_o = 50
+
+# optional user-provided coordinates of spherical obstacles
+obstacle_file = null
+
+#####################
+# chain information #
+#####################
+# N_chains, number of chains to generate simultaneously
+N_chains = 1
+
+# N_stages, number of stages in growth
+# below are the stages (length,number segments)
+N_stages = 4
+12,100
+6,400
+3,1600
+1,5000

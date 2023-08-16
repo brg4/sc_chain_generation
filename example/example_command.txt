@@ -1,0 +1,1 @@
+./gen_sc_chain --i_f=/home/ben/Workspace/sc_chain_generation/example/example.inp --o_d=/home/ben/Workspace/sc_chain_generation/example/ --o_l=example --s=10 --l=/home/ben/Workspace/sc_chain_generation/example/test.log --n_t=2 --bin --xyz --dat
